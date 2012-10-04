@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Northwestern University Course Scheduler - Please Login</title>
+    <link rel="stylesheet" href="index_files/defaultlogin.css">
+    <script type="text/javascript" src="index_files/loginscripts.js"></script>
+</head>
+
+<body>
+    <div class="mybackground">
+    <div class="enclosed">
+    <h1>Course Consultant</h1>
+    
+    <form action="app.php" method="post" onsubmit="return validateForm();">
+        
+    <!-- FORM FIELDS -->
+    <div class="askforinfo"><!-- Please enter your Northwestern University account information. -->Log in to see a schedule!</div>
+    <label for="netid">NetID:</label>
+    <div class="error" id="netid-error">You must enter your NetID.</div>
+    <input name="netid" id="netid" type="text">
+        
+    <label for="password">Password:</label>
+    <div class="error" id="pwd-error">You must enter your NetID password.</div>
+    <input name="pwd" id="pwd" type="password">
+    
+    <br>
+    <input value="Login" type="submit">
+    </form>
+    </div>
+    </div>
+
+
+</body></html>

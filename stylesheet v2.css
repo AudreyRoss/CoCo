@@ -1,0 +1,396 @@
+body {
+	background: black;
+	font-family: arial;
+}
+
+#menu-container-container {
+	position: relative;
+	height: 67px;
+	margin: 0px -30px;
+}
+
+#menu-container {
+	position: absolute;
+	width: 100%;
+	margin: -10px -30px 0px;
+	left: 30px;
+	z-index: 1;
+	-moz-box-shadow:    0px 3px 20px 6px #333;
+	-webkit-box-shadow: 0px 3px 20px 6px #333;
+	box-shadow:         0px 3px 20px 6px #333;
+}
+
+#menu {
+    width: 900px;
+	height: 42px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+	overflow: hidden;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu ul li {
+    width: 70px;
+    float: left;
+    text-align: center;
+    margin: 0px 10px;
+}
+
+#menu img {
+	opacity: 0.7;
+}
+
+#menu img:hover {
+	opacity: 1;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;
+}
+
+#preload {
+    display: none;
+    position: absolute;
+}
+
+#schedule td {
+	overflow: visible;
+	text-align: center;
+	margin: 0;
+	width: 18%;
+}
+
+#schedule td:first-child {
+	width: 10%;
+	font-weight: bold;
+}
+
+.dont-add-to-me td {
+	font-weight: bold;
+}
+
+#schedule tr:nth-child(even) {
+	background: black;
+}
+
+#schedule .scheduled-class-container {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	color: black;
+	top: -22px;
+	left: -3px;
+}
+
+#schedule .scheduled-class {
+	position: absolute;
+	background: white;
+	border: 3px solid black;
+	padding: 10px 0px;
+	overflow: hidden;
+	width: 100%;
+}
+
+#main-window canvas {
+    min-width: 900px;
+    width: 100%;
+    height: 780px;
+    clear: both;
+    margin: 0px -30px;
+    left: 30px;
+	overflow: hidden;
+}
+
+.left-panel-screen {
+    position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	height: 740px;
+	width: 270px;
+	top: 95px;
+	left: 19px;
+	margin: 0 auto;
+	background: black;
+}
+
+#petition-a-class {
+	display: none;
+}
+
+#petition {
+	background: white;
+	overflow: auto;
+	height: 216px;
+}
+
+#petition ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+#petition li {
+	padding: 5px 0px;
+	padding-left: 40px;
+	border-bottom: 1px solid gray;
+}
+
+.selected {
+	background: gray;
+	color: white;
+}
+
+#schedule td {
+	border: 1px solid black;
+}
+
+#schedule .removeclass {
+	float: right;
+	margin-top: -10px;
+	z-index: 30;
+}
+
+#petition li:hover {
+	cursor: pointer;
+}
+
+#petition-for {
+	background: white;
+	overflow: auto;
+	height: 300px;
+}
+
+#petition-for .inner-menu li li{
+	margin-left: -40px;
+	padding-left: 40px;
+}
+
+#change-major-minor {
+	display: none;
+}
+
+#current-major-minor {
+	background: white;
+	overflow: auto;
+	height: 120px;
+}
+
+#available-majors-minors {
+	background: white;
+	overflow: auto;
+	height: 420px;
+}
+
+#available-majors-minors .inner-menu li {
+	padding-left: 40px;
+}
+
+#degree-requirements-list {
+	background: white;
+	height: 580px;
+	overflow: auto;
+}
+
+#degree-requirements-options, #majors-minors-options, #petition-options {
+	background: white;
+}
+
+#degree-requirements-options ul, #majors-minors-options ul,#petition-options ul{
+	list-style: none;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+#degree-requirements-options li, #majors-minors-options li , #petition-options li{
+	border: 1px solid white;
+	margin: -1px;
+	display: inline-block;
+	width: 100%;
+	color: white;
+	background: gray;
+	padding: 5px;
+}
+
+#degree-requirements-options li:hover, #majors-minors-options li:hover, #petition-options li:hover {
+	cursor: pointer;
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+	-webkit-box-shadow: 3px 3px 5px 6px #ccc;
+	box-shadow:         3px 3px 5px 6px #ccc;
+}
+
+#available-courses {
+    position: absolute;
+	z-index: 1;
+	height: 740px;
+	width: 260px;
+	top: 95px;
+	left: 640px;
+	margin: 0 auto;
+	overflow: hidden;
+	text-decoration: none;
+	background: black;
+}
+
+#available-courses h3, .left-panel-screen h3{
+	color: white;
+	width: 200px;
+	margin: 10px auto;
+	padding: 2px 0;
+}
+
+#favorites {
+	height: 100px;
+	overflow: auto;
+	padding-left: 40px;
+	background: white;
+}
+
+#recommendations {
+	height: 100px;
+	overflow: auto;
+	padding-left: 40px;
+	background: white;
+}
+
+#courselist {
+	height: 405px;
+	overflow: auto;
+	background: white;
+}
+
+#schedule {
+	position: absolute;
+	z-index: 1;
+	top: 195px;
+	height: 635px;
+	overflow: auto;
+	cursor: default;
+	border-collapse: collapse;
+	padding: 0px;
+}
+
+#tooltip, #saved-prompt {
+	-webkit-transition: opacity 0.2s ease-in-out;
+	-moz-transition: opacity 0.2s ease-in-out;
+	-o-transition: opacity 0.2s ease-in-out;
+	-ms-transition: opacity 0.2s ease-in-out;	
+	transition: opacity 0.2s ease-in-out;
+	opacity: 0;
+	position: absolute;
+	border: 3px solid black;
+	width: 280px;
+	height: 180px;
+	background: white;
+	color: black;
+	padding: 10px;
+}
+
+#saved-prompt {
+	height: 60px;
+	text-align: center;
+}
+
+.menu1 li ul li {
+	list-style-type: none;
+}
+
+.menu1 {
+	padding: 0;
+	margin: 0;
+}
+
+.menu1 > li > a {
+	color: white;
+}
+
+#degree-requirements .menu1 > li > a {
+	font-size: 1.5em;
+}
+
+#degree-requirements .inner-menu > li > a {
+	font-size: 1em;
+}
+
+.menu1 li  ul {
+	background: white;
+	color: black;
+}
+
+.menu1 > li > a.collapsed:before {
+	content:url('collapse-up.png');
+	margin-right: 5px;
+}
+
+.menu1 > li > a.expanded:before {
+	content:url('collapse-down.png');
+	margin-right: 5px;
+}
+
+.menu1 > li > a.collapsed:hover:before {
+	content:url('collapse-up-hover.png');
+	margin-right: 5px;
+}
+
+.menu1 > li > a.expanded:hover:before {
+	content:url('collapse-down-hover.png');
+	margin-right: 5px;
+}
+
+.addclass, .removeclass {
+	opacity: 0.5;
+	height: 16px;
+	width: 16px;
+	display: inline-block;
+	margin-right: 2px;
+}
+
+.addclass:hover, .removeclass:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+.addclass {
+	background-image:url("plus.png");
+}
+
+.removeclass {
+	background-image:url("minus.png");
+}
+
+.class {
+	text-decoration: none;
+	color: black;
+}
+
+.class:hover, .scheduled-class:hover {
+	cursor: help;
+}
+
+.class-info {
+    display: none;
+	position: absolute;
+}
+
+.faveon{
+	background-image:url("heartred.png");
+	background-repeat:no-repeat;
+}
+
+.faveon:hover {
+	background-image:url("heartredred.png");
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
+
+.faveoff{
+	background-image:url("heartwhite.png");
+	background-repeat:no-repeat;
+}
+
+.faveoff:hover {
+	background-image:url("heartwhitehover.png");
+	background-repeat:no-repeat;
+	cursor: pointer;
+}
